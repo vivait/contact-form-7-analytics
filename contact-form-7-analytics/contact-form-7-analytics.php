@@ -40,7 +40,7 @@ function cf7a_addfoot() {
                 window.location.search,
                 page = '<?php echo htmlspecialchars($options['page_suffix'], ENT_QUOTES) ?>';
 
-            if (typeof _gaq == 'array') {
+            if (typeof _gaq == 'object') {
                 _gaq.push(['_trackPageview', location + page]);
             }
             else if (typeof ga == 'function') {
